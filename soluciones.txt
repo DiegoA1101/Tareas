@@ -1,0 +1,50 @@
+#######################################################################################################################################
+# Teoría
+
+1. 
+a) Como excepciones o casos avanzados que van más allá de las primeras tres formas normales.
+
+2. 
+WHERE se usa para filtrar columnas especificas, HAVING filtra por los resultados despues de aplicar una agregación, osea despues de usar GROUP BY
+
+3. 
+c) FROM -> WHERE -> SELECT -> ORDER BY
+
+4. 
+a) Anomalía de inserción, eliminación y actualización.
+5.
+El meme es cuando vas a subir archivos al repositorio, haces el commit y git push pero olvidas hacer git add que es donde agregas los documentos que quieres subir, es como si despegaras el avion sin subir a las personas antes.
+
+# Práctica
+
+1.
+
+```SQL
+-- poner solución debajo de este mensaje
+
+SELECT avg(edad) AS edad_promedio FROM alumnos
+WHERE apellido LIKE '%ez';
+
+```
+
+2.
+
+```SQL
+-- poner solución debajo de este mensaje
+SELECT alumnos.nombre, alumnos.apellido, max(calificaciones.calificacion) AS calificacion_maxima FROM alumnos
+LEFT JOIN calificaciones
+ON alumnos.expediente = calificaciones.expediente
+WHERE
+calificaciones.calificacion IS NOT NULL
+GROUP BY
+alumnos.expediente, alumnos.nombre, alumnos.apellido;
+
+```
+
+3.
+
+```SQL
+-- poner solución debajo de este mensaje
+
+
+```
