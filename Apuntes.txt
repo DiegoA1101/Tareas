@@ -1,0 +1,27 @@
+Las redes neuronales están formadas por neuronas, unidades básicas de procesamiento que reciben valores de entrada, los procesan mediante una suma ponderada ajustada por pesos y generan una salida.
+
+Cada conexión tiene un peso asociado que se puede ajustar y un término independiente llamado sesgo, que permite mover la función para encontrar la mejor solución.
+
+Estas neuronas son similares a una regresión lineal, pero más flexibles, ya que combinan variables hasta resolver el problema planteado.
+
+Una red neuronal tiene tres componentes principales:
+
+Capa de entrada: Recibe las variables iniciales.
+Capas ocultas: Procesan las combinaciones complejas de variables.
+Capa de salida: Genera el resultado final basado en los cálculos previos.
+Funciones de activación:
+
+Introducen no linealidad y ajustan el comportamiento de la red.
+Ejemplos:
+Escalonada: Activa o no una neurona según un umbral.
+Sigmoide: Introduce variabilidad y es útil con múltiples variables.
+Herramientas como TensorFlow Playground permiten experimentar con redes neuronales, ajustando parámetros y funciones de activación para observar sus efectos en tiempo real.
+
+Se puede trabajar con nubes de puntos para clasificación y regresión, ajustando las fronteras entre clases con más capas y neuronas.
+El aprendizaje automático de una red neuronal se basa en el algoritmo de retropropagación de errores (backpropagation):
+
+Este método ajusta los parámetros de la red para minimizar el error de predicción.
+Utiliza el descenso del gradiente para medir cómo cambia el coste respecto a cada parámetro y optimiza los pesos en cada iteración.
+El error se analiza desde la capa de salida hacia atrás, ajustando las neuronas y parámetros más influyentes.
+Los cálculos se basan en derivadas parciales, que conforman el vector gradiente usado para entrenar la red.
+En conclusión, las redes neuronales son herramientas poderosas que modelan relaciones complejas. Su capacidad de aprender automáticamente mediante ajustes iterativos las convierte en una solución clave para problemas de clasificación y regresión en el aprendizaje automático.
